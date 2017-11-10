@@ -33,7 +33,7 @@
 #include "absl/container/internal/test_instance_tracker.h"
 #include "absl/memory/memory.h"
 #include "absl/strings/str_cat.h"
-
+/*
 namespace {
 
 using absl::test_internal::CopyableMovableInstance;
@@ -1672,5 +1672,5 @@ TEST(AllocatorSupportTest, ScopedAllocatorWorks) {
   vec.clear();
   EXPECT_EQ(allocated, 0);
 }
-
+*/
 }  // anonymous namespace

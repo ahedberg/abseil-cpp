@@ -62,49 +62,49 @@ cc_test(
     ],
 )
 
-cc_library(
-    name = "inlined_vector",
-    hdrs = ["inlined_vector.h"],
-    copts = ABSL_DEFAULT_COPTS,
-    deps = [
-        "//absl/algorithm",
-        "//absl/base:core_headers",
-        "//absl/base:throw_delegate",
-        "//absl/memory",
-    ],
-)
+# cc_library(
+#     name = "inlined_vector",
+#     hdrs = ["inlined_vector.h"],
+#     copts = ABSL_DEFAULT_COPTS,
+#     deps = [
+#         "//absl/algorithm",
+#         "//absl/base:core_headers",
+#         "//absl/base:throw_delegate",
+#         "//absl/memory",
+#     ],
+# )
 
-cc_test(
-    name = "inlined_vector_test",
-    srcs = ["inlined_vector_test.cc"],
-    copts = ABSL_TEST_COPTS + ["-fexceptions"],
-    deps = [
-        ":inlined_vector",
-        ":test_instance_tracker",
-        "//absl/base",
-        "//absl/base:core_headers",
-        "//absl/base:exception_testing",
-        "//absl/memory",
-        "//absl/strings",
-        "@com_google_googletest//:gtest_main",
-    ],
-)
+# cc_test(
+#     name = "inlined_vector_test",
+#     srcs = ["inlined_vector_test.cc"],
+#     copts = ABSL_TEST_COPTS + ["-fexceptions"],
+#     deps = [
+#         ":inlined_vector",
+#         ":test_instance_tracker",
+#         "//absl/base",
+#         "//absl/base:core_headers",
+#         "//absl/base:exception_testing",
+#         "//absl/memory",
+#         "//absl/strings",
+#         "@com_google_googletest//:gtest_main",
+#     ],
+# )
 
-cc_test(
-    name = "inlined_vector_test_noexceptions",
-    srcs = ["inlined_vector_test.cc"],
-    copts = ABSL_TEST_COPTS,
-    deps = [
-        ":inlined_vector",
-        ":test_instance_tracker",
-        "//absl/base",
-        "//absl/base:core_headers",
-        "//absl/base:exception_testing",
-        "//absl/memory",
-        "//absl/strings",
-        "@com_google_googletest//:gtest_main",
-    ],
-)
+# cc_test(
+#     name = "inlined_vector_test_noexceptions",
+#     srcs = ["inlined_vector_test.cc"],
+#     copts = ABSL_TEST_COPTS,
+#     deps = [
+#         ":inlined_vector",
+#         ":test_instance_tracker",
+#         "//absl/base",
+#         "//absl/base:core_headers",
+#         "//absl/base:exception_testing",
+#         "//absl/memory",
+#         "//absl/strings",
+#         "@com_google_googletest//:gtest_main",
+#     ],
+# )
 
 cc_library(
     name = "test_instance_tracker",

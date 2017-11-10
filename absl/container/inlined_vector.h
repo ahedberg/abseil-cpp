@@ -51,7 +51,7 @@
 #include "absl/base/optimization.h"
 #include "absl/base/port.h"
 #include "absl/memory/memory.h"
-
+/*
 namespace absl {
 
 // -----------------------------------------------------------------------------
@@ -1340,5 +1340,5 @@ auto InlinedVector<T, N, A>::InsertWithRange(const_iterator position,
 }
 
 }  // namespace absl
-
+*/
 #endif  // ABSL_CONTAINER_INLINED_VECTOR_H_
